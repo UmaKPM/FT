@@ -1,0 +1,39 @@
+.image-text-container {
+
+    display: flex;
+
+    flex-direction: grid;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 10px;
+
+   }
+
+   
+
+   @media screen and (min-width: 768px) {
+
+    .image-text-container {
+
+      flex-direction: row;
+
+      justify-content: space-between;
+
+      text-align: left;
+
+    }
+
+   
+
+    .image-content {
+
+      flex: 1;
+
+      margin-right: 20px;
+
+    }
+
+   }

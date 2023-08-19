@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Intelligent Advisor - Robo Advisor</title>
+</head>
+
+<body style="width: 400px;">
+    <header>
+        <div class="col-lg-4 col-sm-2">
+            <div class="container text-center">
+              <br>
+              <h1><b>Future Tense</b></h1>
+              <h5 style="font-size: medium; text-align: right;">Welcome Back Alan ! </h5>
+            </div>
+          </div>
+    </header>
+    <!-- <main> -->
+
+    <!-- <div class="advisor">
+        <div class="advisor-next">
+            <h1>Welcome to the Future Tense!</h1>
+
+        </div>
+    </div> -->
+      <br>
+
+
+
+
+    <div class="chatbot">
+        <div class="image-container">
+            <img class="shadow-image" height=50px src="../assets/images/microphone-2.png" alt="Image" />
+        </div>
+        <br>
+        <h3 style="color: darkblue;">ASK NOW. . .</h3>
+        <br>
+
+        <div  class="chat-container">
+          <div #scrollMe class="scroll-bar">
+            <div class="chat-messages">
+
+
+            <div *ngFor="let message of messages" class="message" [ngClass]="{ 'user-message': message.isUser, 'bot-message': !message.isUser }">
+
+                 <!-- {{ message.text }} -->
+                 <div [innerHTML]="message.text"></div>
+
+            </div>
+            <!-- <div class="message">
+            <input type="text" [(ngModel)]="userInput"  />
+            <button (click)="generateMessage()"> Send</button>
+             <div [innerHTML]="message"></div>
+            </div> -->
+
+            <div *ngIf="loading" class="message bot-message">
+            <span> <img src="../assets/images/l1.gif" alt="" height="50px" width="50px"></span>
+              </div>
+             </div>
+
+
+            </div>
+            <div class="chat-input" >
+              <input    #inputField class="input-field" type="text" placeholder="Type your message..." (keydown.enter)="handleMessage(inputField.value); inputField.value = ''" />
+                </div>
+              <!--button style="margin-left:70%"  class="btn btn-success"  (click)="handleMessage(inputField.value); inputField.value = ''">Send</button-->
+              <img class="img" height=30px margin-left:auto margin-right:400px width=30px src="../assets/images/arrow.jpg" alt="Image" />
+
+            </div>
+            </div>
+
+    <br>
+
+    <!-- </main> -->
+
+    <footer style="width: 400px;">
+        <p>&copy; 2023 Future Tense. All rights reserved.</p>
+    </footer>
+</body>
+
+
+
+</html>
