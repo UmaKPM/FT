@@ -67,8 +67,8 @@
               <input    #inputField class="input-field" type="text" placeholder="Type your message..." (keydown.enter)="handleMessage(inputField.value); inputField.value = ''" />
                 </div>
               <!--button style="margin-left:70%"  class="btn btn-success"  (click)="handleMessage(inputField.value); inputField.value = ''">Send</button-->
-              <img class="img" height=30px margin-left:auto margin-right:400px width=30px src="../assets/images/arrow.jpg" alt="Image" />
 
+                 <a  (click)="handleMessage(inputField.value); inputField.value = ''"><img class="img" height=30px  margin-right:400px width=30px src="../assets/images/arrow.jpg" alt="Image" style="margin-left: 85%;" /></a>
             </div>
             </div>
 
